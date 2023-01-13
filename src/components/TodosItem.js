@@ -100,8 +100,9 @@ const TodosItem = ({ todoItem, setTodoItem }) => {
                     : <>
                       <input
                         type='text'
-                        maxLength='30'
+                        maxLength='100'
                         className='todo-item-edit'
+                        value={item.content}
                         placeholder={item.content}
                         onChange={handleEditInputChange}
                         onKeyDown={(event) => handelEditInputKeyDown(event, item.id)}
